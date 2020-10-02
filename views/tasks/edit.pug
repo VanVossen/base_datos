@@ -1,0 +1,8 @@
+doctype html
+html
+  head
+    title con pug tareas edit
+  body
+    form(action=`/tasks/${task.id}?_method=PUT` method="POST")
+      textarea(name="description" placeholder="aca se carga")=task.description
+      input(type="submit" value="Guardar")

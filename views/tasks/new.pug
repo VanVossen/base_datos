@@ -1,0 +1,8 @@
+doctype html
+html
+  head
+    title con pug tareas
+  body
+    form(action="/tasks" method="POST")
+      textarea(name="description" placeholder="aca se carga")
+      input(type="submit" value="Guardar")
